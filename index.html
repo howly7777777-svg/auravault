@@ -1,1 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraVault — Privacy Policy & Support</title>
+    <style>
+        :root {
+            --primary: #8e44ad;
+            --bg: #0f0f12;
+            --card-bg: #1a1a24;
+            --text: #e1e1e6;
+            --text-muted: #a0a0b0;
+            --border: #2a2a3a;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+        }
+        .logo-icon {
+            font-size: 56px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+        }
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 16px;
+            margin: 0;
+        }
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .lang-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 6px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .lang-btn.active, .lang-btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #fff;
+        }
+        .content-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 30px;
+            margin-top: 30px;
+        }
+        h2 {
+            font-size: 22px;
+            color: #fff;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .contact-box {
+            background: rgba(142, 68, 173, 0.15);
+            border: 1px solid var(--primary);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .contact-box a {
+            color: #bb86fc;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-icon">🛡️</div>
+            <h1>AuraVault</h1>
+            <p class="subtitle">100% On-Device Private AI Agent Ecosystem</p>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" onclick="switchLang('zh-Hant')">繁體中文</button>
+                <button class="lang-btn" onclick="switchLang('zh-Hans')">简体中文</button>
+                <button class="lang-btn" onclick="switchLang('ja')">日本語</button>
+                <button class="lang-btn" onclick="switchLang('ko')">한국어</button>
+            </div>
+        </header>
 
+        <!-- ENGLISH -->
+        <div id="lang-en" class="content-card lang-sec">
+            <h2>Privacy Policy</h2>
+            <p>Your privacy is the absolute core foundation of <strong>AuraVault</strong>. Our core architecture is built upon zero-server, 100% on-device data persistence.</p>
+            <ul>
+                <li><strong>Zero Server Data Collection:</strong> We do not collect, store, or transmit your personal data, journal entries, health metrics, financial transactions, or private memories to any remote servers.</li>
+                <li><strong>Local Encrypted Storage:</strong> All your data is stored locally on your Apple device using SwiftData and encrypted using AES-GCM (CryptoKit).</li>
+                <li><strong>On-Device AI Processing:</strong> Natural language processing, vector embeddings, OCR document scanning, and sentiment analyses run locally on your device's Apple Silicon / Neural Engine.</li>
+                <li><strong>Optional LAN VajraHowly Hub:</strong> If enabled, your iPhone communicates over your local home Wi-Fi directly with your own Mac. No data ever leaves your local network.</li>
+            </ul>
+
+            <h2>Terms of Use (EULA)</h2>
+            <p>AuraVault licensed application is governed by the standard Apple Licensed Application End User License Agreement (EULA):</p>
+            <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" style="color: #bb86fc;">Apple Standard Licensed Application End User License Agreement (EULA)</a></p>
+
+            <h2>Medical Disclaimer</h2>
+            <p>AuraVault Health Insights and medical lab report OCR interpretations are generated for tracking and reference purposes only. They do not constitute medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional regarding any medical conditions.</p>
+
+            <div class="contact-box">
+                <p>Need support or have questions?</p>
+                <p>Support Email: <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- TRADITIONAL CHINESE -->
+        <div id="lang-zh-Hant" class="content-card lang-sec" style="display:none;">
+            <h2>隱私權政策 (Privacy Policy)</h2>
+            <p>個人隱私是 <strong>AuraVault</strong> 的絕對核心。我們的架構完全建立在零伺服器、100% 本地端數據儲存的基礎之上。</p>
+            <ul>
+                <li><strong>零伺服器收集：</strong> 我們絕不上傳、收集或傳輸您的個人數據、日記條目、健康記錄、財務交易或記憶備忘至任何雲端伺服器。</li>
+                <li><strong>本地加密儲存：</strong> 您的所有數據均透過 SwiftData 儲存於您的 Apple 裝置本地，並採用 AES-GCM (CryptoKit) 進行硬體級加密。</li>
+                <li><strong>本地 AI 運算：</strong> 自然語言處理、向量比對、OCR 光學掃描與情緒分析完全在您裝置的 Apple Silicon / Neural Engine 上離線執行。</li>
+                <li><strong>可選 VajraHowly Hub 局域網：</strong> 若開啟此功能，您的 iPhone 僅透過家用 Wi-Fi 與您自己的 Mac 連線，數據絕不出家門。</li>
+            </ul>
+
+            <h2>使用條款 (EULA)</h2>
+            <p>AuraVault 應用程式遵守 Apple 標準授權應用程式最終用戶許可協議 (EULA)：</p>
+            <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" style="color: #bb86fc;">Apple 標準最終用戶許可協議 (EULA)</a></p>
+
+            <h2>醫療免責聲明</h2>
+            <p>AuraVault 健康洞察與體檢報告 OCR 解析僅供個人記錄與追蹤參考，不構成任何醫療建議、診斷或治療。如有健康疑問，請務必諮詢專業醫師。</p>
+
+            <div class="contact-box">
+                <p>如需支援或有任何疑問，請聯絡我們：</p>
+                <p>支援信箱： <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- SIMPLIFIED CHINESE -->
+        <div id="lang-zh-Hans" class="content-card lang-sec" style="display:none;">
+            <h2>隐私政策 (Privacy Policy)</h2>
+            <p>个人隐私是 <strong>AuraVault</strong> 的绝对核心。我们的架构完全建立在零服务器、100% 本地端数据存储的基础之上。</p>
+            <ul>
+                <li><strong>零服务器收集：</strong> 我们绝不上传、收集或传输您的个人数据、日记条目、健康记录、财务交易或记忆备忘至任何云端服务器。</li>
+                <li><strong>本地加密存储：</strong> 您的所有数据均通过 SwiftData 存储于您的 Apple 设备本地，并采用 AES-GCM (CryptoKit) 进行硬件级加密。</li>
+                <li><strong>本地 AI 计算：</strong> 自然语言处理、向量比对、OCR 光学扫描与情绪分析完全在您设备的 Apple Silicon / Neural Engine 上离线执行。</li>
+                <li><strong>可选 VajraHowly Hub 局域网：</strong> 若开启此功能，您的 iPhone 仅通过家用 Wi-Fi 与您自己的 Mac 连线，数据绝不出家门。</li>
+            </ul>
+
+            <h2>使用条款 (EULA)</h2>
+            <p>AuraVault 应用程序遵守 Apple 标准授权应用程序最终用户许可协议 (EULA)：</p>
+            <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" style="color: #bb86fc;">Apple 标准最终用户许可协议 (EULA)</a></p>
+
+            <h2>医疗免责声明</h2>
+            <p>AuraVault 健康洞察与体检报告 OCR 解析仅供个人记录与追踪参考，不构成任何医疗建议、诊断或治疗。如有健康疑问，请务必咨询专业医师。</p>
+
+            <div class="contact-box">
+                <p>如需支持或有任何疑问，请联系我们：</p>
+                <p>支持邮箱： <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- JAPANESE -->
+        <div id="lang-ja" class="content-card lang-sec" style="display:none;">
+            <h2>プライバシーポリシー</h2>
+            <p>プライバシー保護は <strong>AuraVault</strong> の最も重要な根幹です。当アプリはサーバーなし、100% 端末内データ保存アーキテクチャで構築されています。</p>
+            <ul>
+                <li><strong>サーバーデータ収集ゼロ：</strong> 個人データ、日記、健康記録、家計簿、メモなどが外部サーバーに送信されることは一切ありません。</li>
+                <li><strong>暗号化されたローカル保存：</strong> すべてのデータは SwiftData を使用してデバイス内に保存され、AES-GCM (CryptoKit) で暗号化されます。</li>
+                <li><strong>オンデバイス AI 処理：</strong> 自然言語処理、ベクトル検索、OCR スキャン、感情分析はすべてお使いの Apple Silicon / Neural Engine 上で動作します。</li>
+            </ul>
+
+            <h2>利用規約 (EULA)</h2>
+            <p>AuraVault は Apple の標準エンドユーザーライセンス契約 (EULA) に準拠しています：</p>
+            <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" style="color: #bb86fc;">Apple 標準エンドユーザーライセンス契約 (EULA)</a></p>
+
+            <h2>医療免責事項</h2>
+            <p>AuraVault のヘルスケア分析および OCR 解析は記録および参考のみを目的としており、医療上の助言や診断に代わるものではありません。</p>
+
+            <div class="contact-box">
+                <p>サポートのお問い合わせ：</p>
+                <p>サポートメール： <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- KOREAN -->
+        <div id="lang-ko" class="content-card lang-sec" style="display:none;">
+            <h2>개인정보 처리방침</h2>
+            <p>개인정보 보호는 <strong>AuraVault</strong>의 최우선 가치입니다. 당사는 100% 온디바이스 데이터 저장 아키텍처를 기반으로 설계되었습니다.</p>
+            <ul>
+                <li><strong>서버 수집 제로:</strong> 사용자의 일기, 건강 데이터, 자산 기록 및 메모는 외부 서버로 전송되거나 저장되지 않습니다.</li>
+                <li><strong>로컬 암호화 저장:</strong> 모든 데이터는 SwiftData를 통해 Apple 기기에 로컬로 저장되며 AES-GCM (CryptoKit)으로 암호화됩니다.</li>
+                <li><strong>온디바이스 AI 연산:</strong> 모든 자연어 처리, 벡터 검색, OCR 스캔은 기기의 Apple Silicon / Neural Engine에서 오프라인으로 실행됩니다.</li>
+            </ul>
+
+            <h2>이용약관 (EULA)</h2>
+            <p>AuraVault는 Apple의 표준 최종 사용자 라이선스 동의서(EULA)를 준수합니다:</p>
+            <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" style="color: #bb86fc;">Apple 표준 최종 사용자 라이선스 동의서 (EULA)</a></p>
+
+            <h2>의학적 고지사항</h2>
+            <p>AuraVault의 건강 인사이트 및 OCR 분석은 참고용으로만 제공되며 전문적인 의학적 진단이나 치료를 대신할 수 없습니다.</p>
+
+            <div class="contact-box">
+                <p>지원 문의:</p>
+                <p>지원 이메일: <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 VajraHowly. All rights reserved. AuraVault.</p>
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-sec').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('lang-' + lang).style.display = 'block';
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
